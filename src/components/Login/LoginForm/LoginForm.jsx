@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { FaUser, FaLock } from 'react-icons/fa'
+
 import { signInWithEmailAndPassword } from "firebase/auth"
 import { auth } from '../../../Firebase'
 
@@ -41,7 +41,7 @@ const LoginForm = ({ toggleForm }) => {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <FaUser className="icon" />
+         
           </div>
           <div className="input-box">
             <input
@@ -51,7 +51,7 @@ const LoginForm = ({ toggleForm }) => {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-            <FaLock className="icon" />
+        
           </div>
         
           {error && <p className="error-message">{error}</p>}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { createUserWithEmailAndPassword } from "firebase/auth"
 import { auth } from "../../..//Firebase"
-import { FaLock, FaEnvelope } from 'react-icons/fa'
+
 
 const RegistrationForm = ({ toggleForm }) => {
 
@@ -39,7 +39,7 @@ const RegistrationForm = ({ toggleForm }) => {
               type="email"
               required
             />
-            <FaEnvelope className="icon" />
+           
           </div>
           <div className="input-box">
             <input
@@ -49,14 +49,14 @@ const RegistrationForm = ({ toggleForm }) => {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-            <FaLock className="icon" />
+           
             <input
                     placeholder="Enter your password again"
                     value={copyPassword}
                     onChange={(e) => setcopyPassword(e.target.value)}
                     type="password" 
                     required/>
-                    <FaLock className="icon" />
+                    
           </div>
           <div className="remember-forgot">
             <label>
